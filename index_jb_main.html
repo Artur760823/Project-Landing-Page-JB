@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JB PhoneTracker</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ce6748dc8c.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="jquery/jquery.scrollTo.min.js"></script>
+  <script>
+    jQuery(function ($) {
+      $('#menu1').click(function () {
+        $.scrollTo($('#features'), 500);
+      })
+    })
+
+    jQuery(function ($) {
+      $('#menu2').click(function () {
+        $.scrollTo($('#how'), 500);
+      })
+    })
+    jQuery(function ($) {
+      $('.scrollUp').click(function () {
+        $.scrollTo($('body'), 1000);
+      })
+    });
+    // pokaż podczas przewijania
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) $('.scrollUp').fadeIn();
+        else $('.scrollUp').fadeOut();
+      }
+
+    );
+  </script>
+  <link rel="stylesheet" href="style_jb.css">
+</head>
+
+<body>
+  <a href="#" class="scrollUp">
+    <i class="fas fa-arrow-circle-up"></i>
+  </a>
+  <button class="hamburger">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+  <nav class="main">
+    <ul>
+      <li class="menu"><a id="menu1" href="#">Features</a></li>
+      <li class="menu"><a id='menu2' href="#">How it works</a></li>
+      <li class="menu"><a href="#">Contact</a></li>
+      <li class="shop"><a href="#"><i class="fab fa-app-store"></i></a></li>
+      <li class="shop"><a href="#"><i class="fab fa-google-play"></i></a></li>
+    </ul>
+
+  </nav>
+  <header>
+    <h1>JB Lockerr...</h1>
+    <h2>The best & simple phone tracker</h2>
+  </header>
+  <main>
+    <section class="features">
+      <h2 id="features">Our Solution</h2>
+      <div class="wrapper">
+        <div class="feature">
+          <p>Data Encription</p>
+        </div>
+        <div class="feature">
+          <p>Employee monitoring</p>
+        </div>
+        <div class="feature">
+          <p>Monitoring of children</p>
+        </div>
+        <div class="feature">
+          <p>Protection of old people</p>
+        </div>
+      </div>
+    </section>
+    <section class="howItWorks">
+      <h1 id='how'>JB Lockerr's... advantages</h1>
+      <article>
+        <h2>Article one</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis ipsam eaque ab ducimus suscipit sit veniam
+          dolore et, molestias animi qui quidem ipsa vel facilis unde, corrupti voluptas fugit! Itaque? Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Earum eius porro autem blanditiis consequatur libero accusantium
+          deleniti ab, amet ea iusto rerum veniam soluta vero quia numquam minus debitis sed perferendis animi commodi
+          laborum. Tempora laboriosam tempore dolorum odio eos, illo tenetur, ipsum culpa, quod fugit minus velit
+          repellat itaque!</p>
+      </article>
+      <article>
+        <h2>Article two</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis ipsam eaque ab ducimus suscipit sit veniam
+          dolore et, molestias animi qui quidem ipsa vel facilis unde, corrupti voluptas fugit! Itaque? Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Molestias, iste ducimus deserunt vel itaque, tempore praesentium
+          iure, laborum quibusdam illo laudantium laboriosam ut voluptatibus voluptatum. Non libero reiciendis quod.
+          Possimus debitis recusandae est et consectetur tenetur asperiores repellendus illum fugiat minus eaque
+          reiciendis ab porro, quidem delectus iure a. Minus.</p>
+      </article>
+      <article>
+        <h2>Three easy steps</h2>
+        <div class="threeSteps">
+          <div class="storeIco">
+            <p>Go to your app vendor:</p>
+            <i class="fab fa-app-store-ios"></i>
+            <i class="fab fa-google-play"></i>
+          </div>
+          <div class="instalIco">
+            <p>Buy, download & instal App</p>
+            <i class="fas fa-user-cog"></i>
+          </div>
+          <div class="spyIco">
+            <p>Start Spying</p>
+            <i class="far fa-eye"></i>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="contact">
+
+    </section>
+  </main>
+  <footer>JB Lockerr... Powered by JB &copy;</footer>
+
+  <script src="js\main_jb.js"></script>
+</body>
+
+</html>
